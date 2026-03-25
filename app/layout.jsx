@@ -1,4 +1,4 @@
-import { Google_Sans } from "next/font/google";
+import { Google_Sans, Figtree } from "next/font/google";
 import "./globals.css";
 
 export const metadata = {
@@ -12,9 +12,14 @@ const google_sans = Google_Sans({
   subsets: ["latin"],
 });
 
+const figtree = Figtree({
+  variable: "--font-figtree",
+  subsets: ["latin"],
+});
+
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={google_sans.variable}>
+    <html lang="en" className={`${google_sans.variable} ${figtree.variable}`}>
       <body>{children}</body>
     </html>
   );
