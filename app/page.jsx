@@ -1,36 +1,44 @@
-import ContactIcons from "@/components/ContactIcons";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="w-[90%] h-screen mx-auto py-8 flex items-center gap-8">
-      <div className="flex-1 h-full flex flex-col justify-between">
-        <header className="flex items-center justify-between">
-          <div id="logo" className="text-[1.2rem] font-semibold">
-            MA
-          </div>
-          <button className="hover:underline transition-colors cursor-pointer">
-            Send Enquiry
-          </button>
-        </header>
-        <p className="text-[2rem] leading-normal mb-[12rem]">
-          Hey, My name is Muhammed Aslam. I'm a software developer, who design
-          and build websites for your business
+    <main className="h-screen flex flex-col">
+      <header className="flex flex-col items-center gap-2 py-8 shrink-0">
+        <div className="font--heading text-[1.8rem] font-bold">
+          MUHAMMED ASLAM
+        </div>
+        <p className="w-[60%] text-[1.2rem] text-center">
+          Hey, My name is Muhammed Aslam. I’m a software-developer, who designs
+          and builds websites for your business
         </p>
-        <footer className="flex justify-between items-end">
-          <ul className="flex items-center gap-8">
-            <li className="cursor-pointer">Projects</li>
-            <li className="cursor-pointer">About Me</li>
-          </ul>
-          <ContactIcons />
-        </footer>
-      </div>
-      <div className="h-full">
+      </header>
+      <section className="flex justify-center flex-1 min-h-0">
         <img
-          src="https://i.pinimg.com/736x/38/90/a1/3890a13a35ef05f9a4039c4c27541a7c.jpg"
-          alt="profile image"
-          className="h-full"
+          src="https://i.pinimg.com/736x/fb/7b/47/fb7b47d5d0e2b118543acc7606ada88f.jpg"
+          alt="Aslam Portfolio Profile Picture"
+          className="h-full w-auto object-contain"
         />
-      </div>
+      </section>
+      <footer className="flex justify-center gap-8 py-8 shrink-0 text-neutral-400">
+        <Link
+          href="/about-me"
+          className="hover:text-white transition-colors font-normal"
+        >
+          About Me
+        </Link>
+        <Link
+          href="/projects"
+          className="hover:text-white transition-colors font-normal"
+        >
+          Projects
+        </Link>
+        <Link
+          href="/contact"
+          className="hover:text-white transition-colors font-normal"
+        >
+          Contact
+        </Link>
+      </footer>
     </main>
   );
 }

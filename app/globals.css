@@ -1,7 +1,11 @@
 @import "tailwindcss";
 
 html {
-  font-family: var(--font-google);
+  font-family: var(--font-merrieweather);
   background-color: #000000;
   color: white;
+}
+
+.font--heading {
+  font-family: var(--font-merrieweather_sans);
 }
