@@ -1,43 +1,23 @@
-"use client";
-
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-
 const Header = () => {
-  let path = usePathname().replace("/", "");
   return (
-    <header className="border-b border-neutral-600">
-      <nav className="flex flex-col items-center gap-1 py-4">
-        <Link className="font--heading text-[1.2rem]" href="/">
-          MUHAMMED ASLAM
-        </Link>
-        <ul className="flex gap-12 text-[.9rem] text-neutral-400">
-          <li>
-            <Link
-              href="/about-me"
-              className={`${path === "about-me" && "text-white"} hover:text-white transition-colors`}
-            >
-              About Me
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/projects"
-              className={`${path === "projects" && "text-white"} hover:text-white transition-colors`}
-            >
-              Projects
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/contact"
-              className={`${path === "contact" && "text-white"} hover:text-white transition-colors`}
-            >
-              Contact
-            </Link>
-          </li>
-        </ul>
-      </nav>
+    <header className="fixed left-0 w-full bg-black flex flex-col items-center justify-center h-24 border-b border-neutral-800 z-100">
+      <div className="font--heading text-[1.6rem] font-semibold uppercase">
+        Muhammed Aslam
+      </div>
+      <ul className="flex items-center gap-8">
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#faq">FAQ</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
     </header>
   );
 };

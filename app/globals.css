@@ -1,11 +1,18 @@
 @import "tailwindcss";
 
 html {
-  font-family: var(--font-merrieweather);
+  font-family: var(--font-roboto);
   background-color: #000000;
   color: white;
+  scroll-behavior: smooth;
 }
 
 .font--heading {
-  font-family: var(--font-merrieweather_sans);
+  font-family: var(--font-archivo);
+}
+.label {
+  @apply text-neutral-400;
+}
+.input {
+  @apply w-full border-b border-neutral-500 outline-none p-1;
 }
