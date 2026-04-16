@@ -4,7 +4,7 @@ import projects from "@/data/projects";
 const Projects = () => {
   return (
     <section
-      className="mt-4 lg:mt-8 flex flex-col gap-12 scroll-mt-14 lg:scroll-mt-26"
+      className="mt-4 lg:mt-8 flex flex-col gap-12 scroll-mt-17 lg:scroll-mt-26"
       id="projects"
     >
       <div className="flex flex-col gap-2 lg:gap-4">

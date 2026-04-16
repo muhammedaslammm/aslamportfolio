@@ -1,10 +1,10 @@
 const Banner = () => {
   return (
     <section
-      className="flex flex-col items-center gap-5 lg:gap-5 py-2 lg:py-4 scroll-mt-14 lg:scroll-mt-24"
+      className="flex flex-col items-center gap-5 lg:gap-5 py-3 lg:py-4 scroll-mt-14 lg:scroll-mt-24"
       id="about"
     >
-      <h2 className="w-[85%] lg:w-4/6 text-left lg:text-center text-[1rem] lg:text-[1.2rem] font-medium">
+      <h2 className="w-[85%] lg:w-4/6 text-left lg:text-center text-[1.1rem] lg:text-[1.2rem] font-medium">
         Hey, I’m Muhammed Aslam — a Fullstack Developer with 1+ year of
         real-world experience. I turn your requirements into working solutions,
         and fix related problems along the way.
