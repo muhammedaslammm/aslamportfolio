@@ -7,7 +7,7 @@ const Item = ({ item }) => {
   let [open, setOpen] = useState(false);
   return (
     <div
-      className={`py-4 border-b border-neutral-500 flex flex-col gap-4 overflow-hidden ${open ? "max-h-40" : "max-h-14"} transition-all duration-800`}
+      className={`py-4 border-b border-neutral-500 flex flex-col gap-4 overflow-hidden text-[.9rem] lg:text-[1rem] ${open ? "max-h-50 lg:max-h-40" : "max-h-14"} transition-all duration-800`}
     >
       <div
         className="flex items-center justify-between cursor-pointer"

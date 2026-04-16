@@ -3,8 +3,11 @@ import content from "@/data/FAQs";
 
 const FAQ = () => {
   return (
-    <section className="flex flex-col gap-4 scroll-mt-26" id="faq">
-      <div className="font--heading text-center font-medium uppercase text-[1.4rem]">
+    <section
+      className="flex flex-col gap-2 lg:gap-4 scroll-mt-14 lg:scroll-mt-26"
+      id="faq"
+    >
+      <div className="font--heading text-center font-medium uppercase text-[1rem] lg:text-[1.4rem]">
         How i handle projects
       </div>
       <div>

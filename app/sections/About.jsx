@@ -1,10 +1,10 @@
 const About = () => {
   return (
-    <section className="flex flex-col gap-4">
-      <div className="font--heading text-center font-medium uppercase text-[1.2rem]">
+    <section className="flex flex-col gap-2 lg:gap-4">
+      <div className="font--heading text-center font-medium uppercase text-[1rem] lg:text-[1.2rem]">
         About Myself
       </div>
-      <div className="w-2/3 mx-auto flex flex-col gap-4">
+      <div className="w-full lg:w-2/3 text-[.9rem] lg:text-[1rem] mx-auto flex flex-col gap-4">
         <p className="text-justify">
           I’m a fullstack developer focused on solving real client requirements.
           I build admin dashboards and client-side applications, handling

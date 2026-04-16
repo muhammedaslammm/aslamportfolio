@@ -74,6 +74,19 @@ const projects = [
     public: "https://elarahealthai.vercel.app/",
     featured: false,
   },
+  {
+    id: 5,
+    title: "Total Solutions General Trading Website",
+    slug: "total-solutions-website",
+    description:
+      "A static multi-page website featuring multiple sections with a clean and visually appealing UI. Focused on structured layout, smooth navigation, and attractive design.",
+    image: "/projects/totalsolutions.png",
+    tech_stack: ["NextJS", "TailwindCSS"],
+    freelance: false,
+    github: null,
+    public: "https://totalsolutions.vercel.app/",
+    featured: false,
+  },
 ];
 
 export default projects;

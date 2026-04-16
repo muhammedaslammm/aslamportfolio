@@ -1,10 +1,10 @@
 const Header = () => {
   return (
-    <header className="fixed left-0 w-full bg-black flex flex-col items-center justify-center h-24 border-b border-neutral-800 z-100">
-      <div className="font--heading text-[1.6rem] font-semibold uppercase">
+    <header className="fixed left-0 w-full bg-black flex flex-col items-center justify-center h-14 lg:h-24 border-b border-neutral-800 z-100">
+      <div className="font--heading text-[.9rem] lg:text-[1.6rem] font-semibold uppercase">
         Muhammed Aslam
       </div>
-      <ul className="flex items-center gap-8">
+      <ul className="flex items-center gap-8 text-[.7rem] lg:text-[1rem]">
         <li>
           <a href="#about">About</a>
         </li>
