@@ -14,5 +14,5 @@ html {
   @apply text-neutral-400;
 }
 .input {
-  @apply w-full border-b border-neutral-500 outline-none p-1;
+  @apply w-full border-b border-neutral-500 focus:bg-black outline-none p-1;
 }
